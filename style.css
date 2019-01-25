@@ -1,35 +1,47 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  font-family: Tahoma, sans-serif;
+  border-radius: 3px;
 }
 
 body{
-  background-color: sienna;
+  /* background-color: sienna; */
+  background-image: url("http://www.stevens-wood.com/sites/default/files/swatches/L29-Natural%20Marrone.jpg");
+  background-size: cover;
 }
 
 .container{
-  /* background-color: sienna; */
   width: 80vw;
-  height: 950px;
+  height: 1000px;
   margin: auto;
-  padding: 30px;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* padding: 30px; */
+  /* background-color: sienna; */
+}
+
+.header{
+  height: 50%;
+  background-color: white;
+  margin-bottom: 20px;
+  border: 0.5px solid #cecece;
+  padding: 20px;
 }
 
 .cover{
-  height: 50%;
-  padding: 10px;
+  height: 100%;
+  /* padding: 24px 0; */
   background-image: url('https://source.unsplash.com/category/technology');
   background-size: cover;
   background-position: center;
   position: relative;
-  border: 1px solid #cecece;
 }
 
 .title-cover{
   color: black;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -44,21 +56,12 @@ body{
 }
 
 .menu{
+  position: relative;
   width: 100%;
   height: 60px;
   background-color: saddlebrown;
   text-align: center;
-  position: relative;
-  border: 1px solid #cecece;
-}
-
-.menu-item{
-  color: white;
-  float: left;
-  width: 20%;
-  height: 100%;
-  line-height: 60px; /* rivedere le altezze in % con .menu */
-
+  border: 0.8px solid #cecece;
 }
 
 .menu-nav{
@@ -67,6 +70,14 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
+}
+
+.menu-item{
+  float: left;
+  color: white;
+  width: 20%;
+  height: 100%;
+  line-height: 60px; /* rivedere le altezze in % con .menu */
 }
 
 .menu:after{
@@ -83,7 +94,7 @@ body{
 
 .main-section{
   width: 100%;
-  height: 40%;
+  height: 400px;
   position: relative;
   margin-top: 20px;
 }
@@ -101,7 +112,8 @@ body{
   width: 32%;
   height: 100%;
   background-color: white;
-  border: 1px solid #cecece;
+  border: 0.5px solid #cecece;
+  position: relative;
 }
 
 .main > .main-center{
@@ -127,11 +139,13 @@ body{
   padding: 10px;
 }
 
-.buttom{
+.button{
   text-align: center;
   background-color: dimgrey;
   color: white;
   width: 100%;
   height: 40px;
-  margin-top: 5px;
+  position: absolute;
+  top: 359px;
+  /* margin-bottom: 15px; */
 }
